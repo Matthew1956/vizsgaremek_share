@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="hu-HU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tiszai Máté ipari informatikus tanuló vizsgaremeke. 5 év szakmai fejlődésének bemutatása.">
+    <meta name="author" content="Tiszai Máté">
+    <title>Vizsgaremek_TM</title>
+    <link rel="stylesheet" href="css/base.css" /> 
+    <link rel="stylesheet" href="css/header.css" /> 
+    <!--<link rel="stylesheet" href="css/sections.css"/> -->
+    <!--FIXED: section szétbontva szépen css-ekre!-->
+    <link rel="stylesheet" href="./css/section/fejlec.css">
+    <link rel="stylesheet" href="./css/section/tobb_gomb.css">
+    <link rel="stylesheet" href="./css/section/cimek.css">
+    <link rel="stylesheet" href="./css/section/szakaszok.css">
+    <link rel="stylesheet" href="./css/section/reszponziv.css">
+    <link rel="stylesheet" href="css/galeria.css" />
+    <link rel="stylesheet" href="css/footer.css">
+        <!--FIXED: a galleria és a mediaplayer kuka -->
+    <script src="js/scripts.js" defer></script><!--defer azért hogy először az oldal tartalmait töltse be és aztána scriptet-->
+  </head>
+
+  <body>
+    <nav> <!--navigációs sáv elemei-->
+      <a href="https://kghsz.hu/" target="_blank" rel="noopener noreferrer">
+        <img src="kepek/kghsz.webp" alt="KGHSZ" />
+      </a>
+
+      <!--hamburger menü span-al létrehozva -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--gombok + legördülő menü-->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="vizsgaremek.html">Home</a></li><!--visszacsatolva magára a html fájlra-->
+          <li><a href="#" data-target="bevezetes-szoveg">Bevezetés</a></li>
+
+          <li class="dropdown"><!--lenyíló menü-->
+            <a href="#" class="dropbtn" data-target="osztalymodul">Osztályok</a>
+            <div class="dropdown-content"><!--lenyíló tartalom-->
+              <a href="#" data-target="kilenc" style="width: 100%;"> 9. évfolyam</a>
+              <a href="#" data-target="tiz">10. évfolyam</a>
+              <a href="#" data-target="tizenegy">11. évfolyam</a>
+              <a href="#" data-target="tizenketto">12. évfolyam</a>
+              <a href="#" data-target="tizenharom">13. évfolyam</a>
+            </div>
+          </li>
+          <li><a href="#" data-target="refmodul">Önreflexió</a></li>
+          <li><a href="#" data-target="galeria_cim">Galéria</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--fejléc-->
+    <section class="header">
+      <div class="text-box">
+        <h1 class="header_cim">Tiszai Máté <br />vizsgamunka</h1>
+        <p>
+          Az elmúlt öt évet szakmai tanulmányaimnak szenteltem, jelentős
+          fejlődést értem el tudásban, látásmódban, hozzáállásban és gyakorlati
+          készségekben.
+        </p>
+        <p>
+          Megtanultam, hogyan válik az elméletből gyakorlat, és hogyan lehet a
+          tanultakat valós, működő projektekké formálni.
+        </p>
+        <p>
+          Ez az oldal betekintést nyújt abba, hol tartok most szakmailag és
+          hogyan jutottam el idáig.
+        </p>
+        <a class="tobbgomb" href="#" data-target="bevezetes-szoveg">Tovább</a> <!--fejlécben a gomb-->
+      </div>
+    </section>
+    <!-- beveztésmodul felépítése, ez volt a prototípus amit tovább vitél-->
+    <section class="bevezetesmodul">
+      <h1 class="bevez_cim">Bevezetés</h1> 
+      <div class="bevezetes-szoveg">
+        <p>
+          2021-ben csatlakoztam a Berettyóújfalui SZC Közgazdasági Technikum
+          tanulói közé.
+        </p>
+        <p>Az elektrotechnika ágazaton ipari informatikus képzésre járok.</p>
+        <p>
+          Az első két év során az alapok elsajátítására fókuszáltam, és az
+          ágazati alapvizsga sikeres teljesítésével bizonyítottam a szükséges
+          alaptudást.
+        </p>
+        <p>
+          A következő három évben a hangsúly az informatika területére
+          helyeződött. 11. évfolyamon tovább bővítettük az ismereteinket az
+          elektrotechnika területén.
+        </p>
+        <p>
+          Az utolsó két évben a szakmai tevékenységek középpontjába az
+          informatika került, beleértve az ipari buszrendszerekkel, PLC-kkel és
+          mikrokontrollerekkel való gyakorlatokat.
+        </p>
+        <p>
+          Emellett részt vettünk IoT-projektekben, programoztunk C# és Python
+          nyelven, valamint Arduino környezetben, és modelleztünk áramköröket.
+        </p>
+      </div>
+    </section>
+    <!--Osztály modul,  ide vezet a  dropdown content is és az összes osztály-->
+    <section class="osztalymodul">
+      <h1 class="osztaly_cim">Osztályok</h1> 
+      <div class="osztalyok">
+        <p>
+          Így nézett ki az elmúlt 5 évem szakmai szemmel: folyamatos tanulás,
+          gyakorlás és fejlődés.
+        </p>
+        <p>
+          Ebben a fejezetben bemutatom a legfontosabb tapasztalataimat és azokat
+          az eredményeket, <br />
+          amikre diákként a legbüszkébb vagyok.
+        </p>
+      </div>
+
+      <h1 class="kilencedikOsz_cim">Kilencedik</h1>
+      <div class="kilenc">
+        <p>
+          Kilencedikben kezdtem el igazán belelátni a szakma világába, és ez az
+          év adta meg azt a biztos alapot, amire ma is építkezem.
+        </p>
+        <p>
+          Nagyon élveztem a villamos alapismereteket, ahol megtanultam az
+          áramkörök tervezésétől kezdve a megépítésükön át egészen a pontos
+          mérésekig mindent
+        </p>
+        <p>
+          Emellett a gépészeti alapokba is belekóstoltam: megtanultam műszaki
+          rajzot olvasni, megismertem az anyagokat, és a műhelyben a fémipari
+          alapmegmunkálásokat is kipróbáltam.
+        </p>
+      </div>
+
+      <h1 class="tizedikOsz_cim">Tizedik</h1>
+      <div class="tiz">
+        <p>
+          Tizedikben a szakmai képzés megegyezett az előző év tendenciájával,
+          annyi különbséggel hogy év végén a próbát tettem a tudásomról ágazati
+          alapvizsgán.
+        </p>
+        <p>
+          Tantárgyainkban tizedik évfolyamra radikális változás nem történt,
+          munkavállalói alapismeret nevű tantárggyal bővült a paletta.
+        </p>
+        <p>
+          Év végén a BSZC központjában, Berettyóújfaluban sikerült 96%-os
+          ágazati alapvizsgát tennem.
+        </p>
+      </div>
+
+      <h1 class="tizenegyedikOsz_cim">Tizenegyedik</h1>
+      <div class="tizenegy">
+        <p>
+          Az elektrotechnika és az informatika szorosabban összekapcsolódott.
+          Elektrotechnika, analóg és digitális áramkörök, valamint programozási
+          alapismeretek tantárgyak keretében tovább bővítettem műszaki
+          tudásomat,
+        </p>
+        <p>
+          Ebben az évben már nemcsak az alapokkal foglalkoztunk, hanem
+          összetettebb, gondolkodást igénylő feladatokkal is találkoztunk.
+        </p>
+        <p>
+          Megismerkedtem az algoritmikus gondolkodás és a digitális rendszerek
+          alapjaival. Ez az év fontos lépést jelentett a komplexebb szakmai
+          ismeretek elsajátításában.
+        </p>
+      </div>
+
+      <h1 class="tizenkettedikOsz_cim">Tizenkettedik</h1>
+      <div class="tizenketto">
+        <p>
+          Tizenkettedik évfolyamon a gyakorlati informatikai és műszaki
+          ismeretek kerültek előtérbe. Számítógépes szimuláció,
+          adatbázis-kezelés alapjai, (nagy szerelmem) hálózatkezelés, valamint
+          mikrovezérlő-programozás tantárgyak során tovább mélyítettem szakmai
+          tudásomat.
+        </p>
+      </div>
+
+      <h1 class="tizenharmadikOsz_cim">Tizenharmadik</h1>
+      <div class="tizenharom">
+        <p>
+          iparorientált informatikai és automatizálási ismeretek kerültek
+          fókuszba. Munkavállalói idegen nyelv és szakmai angol mellett
+          weblapkészítés, programfejlesztés, számítógépes rendszerüzemeltetés,
+          irányítástechnikai alapok, robottechnika, CAD/CAM és IoT tantárgyak
+          során széles körű, gyakorlatorientált tudásra tettem szert.
+        </p>
+      </div>
+    </section>
+    <!--Refelxiós rész, azért ref modul a neve-->
+    <section class="refmodul">
+      <h1 class="cim_ref">Önreflexió</h1>
+      <div class="ref">
+        <p>
+          2021-ben kezdtem meg tanulmányaimat a Berettyóújfalui SZC Közgazdasági
+          Technikum ipari informatikus szakán. Az első két évem az alapozásról
+          szólt: a villamos mérések, az áramkörök tervezése és, a gépészeti
+          alapismeretek mellett a műhelymunka során a gyakorlatban is
+          kipróbálhattam a szakma alapjait. A képzés második felében a hangsúly
+          egyre inkább az informatikára és az automatizálásra tolódott.
+          Tizenegyedikben az algoritmikus gondolkodással és a digitális
+          rendszerekkel ismerkedtem meg. Tizenkettedikben pedig már a
+          számítógépes szimulációk és a hálózatkezelés kerültek előtérbe. Ez
+          utóbbi terület vált a fő érdeklődési körömmé is. Az utolsó években már
+          komplexebb, ipari szintű feladatokat kaptunk. Gyakorlatot szereztem a
+          PLC-k és mikrokontrollerek programozásában, valamint részt vettem
+          IoT-projektekben és robottechnikai feladatokban is. Emellett
+          elsajátítottam a C# és Python nyelvek alapjait, és tapasztalatot
+          szereztem a CAD/CAM rendszerek használatában.
+        </p>
+      </div>
+    </section>
+    <!--galléria-->
+    <section class="media_section">
+      <h1 class="galeria_cim">Galéria</h1>
+      <div class="galeria">
+        <p>
+          Az itt látható munkák az elmúlt öt év szakmai fejlődését
+          dokumentálják. Érdemes végigpörgetni a galériát a teljes folyamat
+          megismeréséhez.
+        </p>
+        <!--FIXED: src-nek és a data-fullnak úgyan az kell lennie az elérsiútvonalnak -->
+        <img src="./kepek/vizsgaremek_media/alkoto2.jfif" alt="Kép Tiszai Mátéról, a weboldal készítőjéről" data-full="./kepek/vizsgaremek_media/alkoto2.jfif">
+        <img src="./kepek/vizsgaremek_media/alkoto.webp" alt="Szalagtüzős kép a weboldal készítőjéről" data-full="./kepek/vizsgaremek_media/alkoto.webp">
+        <img src="./kepek/vizsgaremek_media/1.webp" alt="Led soros kapcsolása" data-full="./kepek/vizsgaremek_media/1.webp" />
+        <img src="./kepek/vizsgaremek_media/3.webp" alt="Szakmairajz" data-full="./kepek/vizsgaremek_media/3.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/4.webp" alt="PCB demo"  data-full="./kepek/vizsgaremek_media/4.webp"/>
+        <img src="./kepek/vizsgaremek_media/5.webp" alt="Ágazativizsga vizsgatárgya" data-full="./kepek/vizsgaremek_media/5.webp"/>
+        <img src="./kepek/vizsgaremek_media/5_6.webp"alt="Ágazativizsga vizsgatárgya" data-full="./kepek/vizsgaremek_media/5_6.webp"/>
+        <img src="./kepek/vizsgaremek_media/6.webp" alt="Feszültség csökkentő áramkör" data-full="./kepek/vizsgaremek_media/6.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/8.webp" alt="Trafó" data-full="./kepek/vizsgaremek_media/8.webp"/>
+        <img src="./kepek/vizsgaremek_media/9.webp" alt="Schneider PLC" data-full="./kepek/vizsgaremek_media/9.webp"/>
+        <img src="./kepek/vizsgaremek_media/10.webp" alt="Relé" data-full="./kepek/vizsgaremek_media/10.webp"/>
+        <img src="./kepek/vizsgaremek_media/11.webp" alt="Relés áramkör" data-full="./kepek/vizsgaremek_media/11.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/12.webp" alt="Festo PLC" data-full="./kepek/vizsgaremek_media/12.webp"/>
+        <img src="./kepek/vizsgaremek_media/14.webp" alt="Ipari vezérlőpult" data-full="./kepek/vizsgaremek_media/14.webp"/>
+        <img src="./kepek/vizsgaremek_media/15.webp" alt="Ipari vezérlőpult" data-full="./kepek/vizsgaremek_media/15.webp"/>
+        <img src="./kepek/vizsgaremek_media/16.webp" alt="Présberendezés" data-full="./kepek/vizsgaremek_media/16.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/17.webp" alt="Gyártósor" data-full="./kepek/vizsgaremek_media/17.webp"/>
+        <img src="./kepek/vizsgaremek_media/17_1.webp" alt="Ipari vezérlőpult" data-full="./kepek/vizsgaremek_media/17_1.webp"/>
+        <img src="./kepek/vizsgaremek_media/17_3.webp" alt="Adagoló berendezés" data-full="./kepek/vizsgaremek_media/17_3.webp"/>
+        <img src="./kepek/vizsgaremek_media/18.webp" alt="MQTT protokoll müködése" data-full="./kepek/vizsgaremek_media/18.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/19.webp" alt="Css-ben programozás" data-full="./kepek/vizsgaremek_media/19.webp"/>
+        <img src="./kepek/vizsgaremek_media/20.webp" alt="Html-ben programozás" data-full="./kepek/vizsgaremek_media/20.webp"/>
+        <img src="./kepek/vizsgaremek_media/21.webp" alt="FANUC robotkar" data-full="./kepek/vizsgaremek_media/21.webp"/>
+        <img src="./kepek/vizsgaremek_media/22.webp" alt="Belső hálózati rendszer" data-full="./kepek/vizsgaremek_media/22.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/python.webp" alt="Számsorsolás pythonban" data-full="./kepek/vizsgaremek_media/python.webp">
+        <img src="./kepek/vizsgaremek_media/23.webp" alt="Áramkör" data-full="./kepek/vizsgaremek_media/23.webp"/>
+        <img src="./kepek/vizsgaremek_media/24.webp" alt="csillag topológia" data-full="./kepek/vizsgaremek_media/24.webp"/>
+
+        <img src="./kepek/vizsgaremek_media/rack_szekreny.webp" alt="rack szekreny" data-full="./kepek/vizsgaremek_media/rack_szekreny.webp">
+        <img src="./kepek/vizsgaremek_media/25.webp" alt="Cisco CCNA-network oklevél" data-full="./kepek/vizsgaremek_media/25.webp"/>
+        <img src="./kepek/vizsgaremek_media/26.webp" alt="Cisco IoT and digital transformation oklevél" data-full="./kepek/vizsgaremek_media/26.webp"/>
+        
+        <!--nincs videóknál alt hanem title van-->
+        <video src="./kepek/vizsgaremek_media/gyartosor.mp4" title="Festo kupakoló gyártosor" controls muted data-full="./kepek/vizsgaremek_media/gyartosor.mp4"></video>
+        <video src="./kepek/vizsgaremek_media/legorobot.mp4" title="Rubikockát kirakó legorobot" controls muted data-full="./kepek/vizsgaremek_media/legorobot.mp4"></video>
+        <video src="./kepek/vizsgaremek_media/3D.mp4" title="3D nyomtató nyomtatás közben" controls muted data-full="./kepek/vizsgaremek_media/3D.mp4"></video>
+
+        <!--záró gomb, jobb és a bal nyíl létrehozása a videók nagyításánál -->
+        <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <img class="modal-content" id="img01" style="display:none;">
+        <video class="modal-content" id="vid01" controls style="display: none;"></video>
+        <div id="caption"></div>
+        </div>
+      </div>
+    </section>
+    <!--lábléc-->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-text">
+            <p>&copy; 2021&ndash;2026 Vizsgaremek Portfólió. | Minden jog fenntartva. | A tartalom saját tulajdont képez. |
+              Készítette: Tiszai Máté 13/B
+            </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

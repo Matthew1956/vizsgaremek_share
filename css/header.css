@@ -1,0 +1,199 @@
+.header {
+  min-height: 100vh;/* képernyő teljes magassága */
+  width: 100%;/* teljes szélesség */
+  position: relative;/* viszonyítási alap a belső elemeknek */
+  display: flex;/* rugalmas elrendezés */
+  flex-direction: column;/* elemek függőlegesen egymás alá */
+}
+
+nav {
+  position: fixed;/* görgetéskor is felül marad */
+  display: flex;/* logó és menü egymás mellett */
+  padding: 2% 3%;/* belső távolság arányosan */
+  justify-content: space-between;/* elemek kitolása a szélekre */
+  align-items: center;/* függőleges középre igazítás */
+  top: 0;/* tetejére rögzítve */
+  left: 0;/* bal szélre rögzítve */
+  width: 100%;/* teljes szélesség */
+  z-index: 1000;/* minden felett jelenjen meg */
+  background: transparent;/* alapból átlátszó háttér */
+  transition: all 0.5s ease;/* sima átmenet görgetéskor */
+}
+
+nav img {
+  width: 120px;/* logó alap szélessége */
+  cursor: pointer;/* kattintható kurzor */
+  max-width: 100%;/* ne nyúljon túl a szülőn */
+  height: auto;/* arányos magasság */
+  transition: 0.4s;/* sima méretváltás */
+}
+
+.nav-scrolled {
+  background-color: #060572;
+  padding: 3px 3%;/* szűkebb belső távolság */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);/* alsó árnyék */
+  border-bottom: 1px solid #0a07ad;/* kék választóvonal */
+}
+
+.nav-scrolled img {
+  width: 60px;/* logó lekicsinyítése görgetéskor */
+  transition: width 0.5s ease;/* sima zsugorodás */
+}
+
+.nav-links ul {
+  list-style: none;/* listajelek eltávolítása */
+}
+
+.nav-links ul li {
+  display: inline-block;/* menüpontok egymás mellett */
+  margin-left: 15px;/* pontok közti távolság */
+  position: relative;/* alap a lenyíló menünek */
+}
+
+.nav-links ul li a {
+  color: #fff;/* fehér szöveg */
+  text-decoration: none;/* aláhúzás törlése */
+  font-size: 20px;/* betűméret */
+  padding: 8px 12px;/* kattintási felület mérete */
+  display: inline-block;/* blokk típusú elrendezés */
+  border-radius: 5px;/* lekerekített sarkok a háttérnek */
+  transition: 0.3s;/* sima színváltás */
+}
+
+.nav-links ul li a:hover {
+  background: #0a07ad;/* kék háttér rámutatáskor */
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: block;/* blokk szerkezet */
+  visibility: hidden;/* láthatatlan de foglalja a helyet */
+  opacity: 0;/* teljesen átlátszó */
+  position: absolute;/* lebegő pozíció */
+  background-color: #04091e;/* lenyíló sötét háttere */
+  border: 1px solid #0a07ad;/* kék keret */ 
+  min-width: 130px;/* minimum szélesség */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);/* alsó árnyék */
+  z-index: 9999;/* minden felett */
+  top: 100%;/* pontosan a menüpont alatt */
+  left: 0;/* bal szélre igazítva */
+  border-radius: 4px;/* lekerekítés */
+  transform: translateY(10px);/* eltolás az animációhoz */
+  transition: all 0.3s ease-in-out;/* finom megjelenés */
+}
+
+.dropdown-content a {
+  color: white !important;/* kényszerített fehér szín */
+  padding: 12px 16px;/* belső távolság */
+  text-decoration: none;/* aláhúzás nélkül */
+  display: block;/* soronkénti elrendezés */
+  font-size: 14px;/* kisebb betűméret */
+  border-bottom: 1px solid #250570;/* elválasztó vonal */
+  white-space: nowrap;/* ne törje meg a sort */
+  text-align: left;/* balra zárt szöveg */
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;/* utolsó elemnél nincs vonal */
+}
+
+.dropdown-content a:hover {
+  background-color: #0a07ad;/* kék kiemelés hoverkor */
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;/* láthatóvá válik */
+  opacity: 1;/* teljesen megjelenik */
+  transform: translateY(0);/* a helyére csúszik */
+}
+
+/*TELEFONON NINCS HOVER!!!!! így kell a dropdown content miatt*/
+.dropdown.open .dropdown-content {
+  visibility: visible; /*alapjáraton láthatatlan*/
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hamburger {
+  display: none;/* alapból rejtve asztalon */
+  flex-direction: column;/* vonalak egymás alatt */
+  cursor: pointer;/* kattintható */
+}
+
+.hamburger span {
+  height: 3px;/* vonal vastagsága */
+  width: 25px;/* vonal szélessége */
+  background: white;/* fehér szín */
+  margin: 4px 0;/* vonalak közti távolság */
+  transition: 0.4s;/* animáció sebessége */
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);/* felső vonal forgatása */
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;/* középső vonal eltüntetése */
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);/* alsó vonal forgatása */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+  flex-direction: column;/* oszlopos elrendezés */
+  padding: 10px;/* kisebb belső távolság */
+}
+
+  nav img {
+  width: 90px;/* kisebb logó */
+  margin-bottom: 10px;/* alsó távolság */
+}
+
+.nav-links {
+  display: none;/* menü elrejtése mobilvonal alatt */
+  width: 100%;/* teljes szélesség */
+}
+
+.nav-links.active {
+  display: flex;/* megnyitott állapot */
+  flex-direction: column;/* függőleges lista */
+  background: #050261;/* mobilmenü háttere */
+}
+
+.nav-links ul {
+  flex-direction: column;/* pontok egymás alatt */
+  width: 100%;/* teljes szélesség */
+  text-align: center;/* középre zárt szöveg */
+  padding: 10px 0;/* belső távolság */
+}
+
+.nav-links ul li {
+  margin: 5px 0;/* pontok közti margó */
+}
+
+.dropdown-content {
+  display: none;/* rejtett lenyíló */
+  position: static;/* tolja maga után a tartalmat */
+  background: #04091e;/* sötét háttér */
+  border: none;/* keret nélkül */
+  box-shadow: none;/* árnyék nélkül */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;/* rámutatásra lenyílik */
+}
+
+.dropdown.open .dropdown-content {
+  display: block !important;/* kényszerített megnyitás */
+}
+
+.hamburger {
+  display: flex;/* hamburger gomb megjelenítése */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h1 { font-size: 30px; }/* még kisebb cím mobilra */
+  nav img { width: 75px; }/* még kisebb logó */
+}

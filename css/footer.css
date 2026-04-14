@@ -1,0 +1,34 @@
+.site-footer {
+    background-color: #111;/* sötét háttér */
+    color: #ffffff9a;/* áttetsző fehér, szürkés szöveg */
+    padding: 20px 0;/* alsó és felső belső távolság */
+    font-family: sans-serif;/* talpatlan betűtípus */
+    font-size: 13px;/* betűméret */
+    border-top: 1px solid #222;/* vékony sötétszürke felső keret */
+    margin-top: 50px;/* távolság az előtte lévő elemtől */
+}
+
+.footer-content {
+    max-width: 1200px;/* maximális szélesség */
+    margin: 0 auto;/* vízszintes középre igazítás */
+    display: flex;/* rugalmas elrendezés */
+    justify-content: center;/* tartalom vízszintes középre igazítása */
+    align-items: center;/* tartalom függőleges középre igazítása */
+    padding: 0 20px;/* szélső belső távolság */
+}
+
+.footer-text p {
+    margin: 0;/* alapértelmezett margók törlése */
+    line-height: 1.5;/* sorköz */
+    font-size: medium;/* közepes betűméret */
+}
+
+/* Mobilos nézet */
+@media (max-width: 768px) {
+    .footer-content 
+    {
+        flex-direction: column;/* elemek egymás alá rendezése */
+        text-align: center;/* szöveg középre igazítása */
+        gap: 20px;/* elemek közötti távolság */
+    }
+}

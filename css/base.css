@@ -1,0 +1,30 @@
+* {
+  margin: 0; /*margó (alapfehér keretet eltünteti)*/
+  padding: 0; /*belső térköz*/
+  box-sizing: border-box; /*azért szükséges hogy kitöltse az egész képernyőt*/
+  font-family: "Times New Roman", Times, serif; /*Betűtipusa az oldalnak (kár hogy nem a Times New Roman az alapértelmezett mindehol)*/
+}
+
+html {
+  scroll-behavior: smooth; /*animált görgetés*/
+  scroll-padding-top: 80px; /*Görgetésnél ennyi helyet hagy fent*/
+}
+
+body {
+  background-size: cover;
+  color: white; /*oldalon az írás alapértelmezetten fehér*/
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../kepek/background.webp); /*Sötétíő réteg (gradient) + háttérkép*/
+  background-size: cover;         /*A kép kitölti a teljes területet*/
+  background-position: center;    /*középre teszi a háttérképet*/
+  background-repeat: no-repeat;  /*nem engedi hogy a kép ismétlődjön*/
+  background-attachment: fixed;   /*a háttérkép egy helyben marad görgetésnél*/
+}
+
+/*scrollbar*/
+
+/*firefoxon tesztelve*/
+* {
+  scrollbar-width: thin; /*vastagsága a scrollbarnak*/
+  scrollbar-color: #a5349f #ffffff;/*görgetősáv színe, görgetősáv háttere */
+  
+}

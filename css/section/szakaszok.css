@@ -1,0 +1,52 @@
+.bevezetesmodul,
+.osztalymodul,
+.media_section,
+.refmodul {
+  text-align: center;/* szöveg középre igazítása */
+  width: 100%;/* teljes szélesség kitöltése */
+}
+
+.bevezetesmodul {
+  min-height: 30vh;/* a képernyőmagasság 30 százaléka minimum */
+}
+
+.osztalymodul,
+.media_section {
+  min-height: 100vh;/* a teljes képernyőmagasság kitöltése minimum */
+}
+
+.refmodul {
+  min-height: 60vh; /* a képernyőmagasság 60 százaléka minimum */
+}
+
+.bevezetes-szoveg,
+.osztalyok,
+.kilenc,
+.tiz,
+.tizenegy,
+.tizenketto,
+.tizenharom,
+.ref {
+  background: rgba(0,5,50,0.7);/* sötétkék áttetsző háttér */
+  border-radius: 15px;/* lekerekített sarkok */
+  padding: 30px 40px;/* belső távolság */
+  max-width: 900px;/* maximális szélesség korlát */
+  margin: 0 auto;/* vízszintes középre igazítás */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);/* külső árnyék */
+  display: flex;/* rugalmas elrendezés */
+  flex-direction: column;/* elemek egymás alá rendezése */
+  gap: 15px;/* elemek közötti távolság */
+}
+
+.bevezetes-szoveg p,
+.osztalyok p,
+.kilenc p,
+.tiz p,
+.tizenegy p,
+.tizenketto p,
+.tizenharom p,
+.ref p {
+  font-size: 20px; /*bekezdés betűmérete*/
+  line-height: 1.5; /*sorköz*/
+  color: #fff;
+}

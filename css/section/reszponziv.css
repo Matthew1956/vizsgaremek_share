@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+  .text-box h1 { font-size: 38px; }/* kisebb főcím méret */
+  .text-box p { font-size: 16px; }/* kisebb szöveg méret */
+
+.tobbgomb {
+  padding: 10px 20px;/* kisebb gomb belső távolság */
+  font-size: 16px;/* kisebb gomb szöveg */
+}
+
+  .bevezetes-szoveg,
+  .osztalyok,
+  .kilenc,
+  .tiz,
+  .tizenegy,
+  .tizenkettő,
+  .tizenhárom {
+    padding: 20px; /* kisebb belső keret a szekcióknak */
+    margin: 10px; /* kisebb külső távolság */
+  }
+
+  .header_cim,
+  .bevez_cim,
+  .osztaly_cim,
+  .galeria_cim,
+  .kilencedikOsz_cim,
+  .tizedikOsz_cim,
+  .tizenegyedikOsz_cim,
+  .tizenkettedikOsz_cim,
+  .tizenharmadikOsz_cim,
+  .cim_ref {
+    font-size: 32px; /* alcímek méretének csökkentése */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h1 { font-size: 30px; } /* még kisebb főcím mobilra */
+  nav img { width: 75px; }/* logó szélességének csökkentése */
+} 
+
+
+/* MOBILNÉZETBEN a dropdown tartalom teljesen eltüntetve */
+@media (max-width: 768px) {
+  .dropdown-content {
+    display: none !important; /* semmi ne jelenjen meg */
+    visibility: hidden !important; 
+    opacity: 0 !important;
+    position: static !important; /* ne legyen lebegő */
+    transform: none !important; /* animáció eltüntetése */
+  }
+
+  .dropdown.open .dropdown-content {
+    display: none !important; /* kényszerített rejtés */
+    visibility: hidden !important; /*elrejtést*/
+    opacity: 0 !important; /*átlátszó legyen*/
+    transform: none !important; /*ne történjen vele semmi*/
+  }
+}

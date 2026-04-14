@@ -1,0 +1,22 @@
+.text-box {
+margin-top: 50px;/* felső külső margó */
+width: 90%;/* szélesség a szülő elem 90 százaléka */
+position: absolute;/* abszolút pozicionálás a szülőhöz */
+top: 50%;/* fentről a középvonalig tolva */
+left: 50%;/* balról a középvonalig tolva */
+transform: translate(-50%, -50%);/* pontos középre igazítás a saját méretével */
+text-align: center;/* szöveg középre rendezése */
+}
+
+.text-box h1 {
+  font-size: 64px; /*főcim betűmérete*/
+  text-shadow: 1px 1px 0 #333, /*többrétegű sötétszürke árnyék*/
+               2px 2px 0 #333,
+               3px 3px 0 #333;
+  margin-bottom: 20px;/*alsó távolság a címtől*/
+}
+
+.text-box p {
+  margin-bottom: 10px;/* bekezdések alatti távolság */
+  font-size: 20px;/* bekezdés betűmérete */
+}

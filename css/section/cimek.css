@@ -1,0 +1,72 @@
+.header_cim,
+.bevez_cim,
+.osztaly_cim,
+.kilencedikOsz_cim,
+.tizedikOsz_cim,
+.tizenegyedikOsz_cim,
+.tizenkettedikOsz_cim,
+.tizenharmadikOsz_cim,
+.galeria_cim,
+.cim_ref {
+  font-size: 48px; /*betűméret*/
+  color: #fff; 
+  text-shadow: 2px 2px 0 #000;
+  margin-top: 20px; /*felső külső margó (távolságtartás)*/
+  margin-bottom: 30px; /*alsó külső margó*/
+  position: relative; /*relatív poz a aláhúzás miatt*/
+  display: inline-block; /*akkora helyett foglaljon mint a szöveg mérete*/
+}
+
+/*automatikus betöltéskori aláhúzás */
+.header_cim::after {
+  content: ""; /*kamu elemnek az üres tartalom*/
+  position: absolute; /*abszolút poz a szülő objekthez képest*/
+  left: 0;
+  bottom: -5px; /*szöveg alá helyezés*/
+  width: 100%; /*teljes vonal hossz*/
+  height: 3px; /*vonalvastagság*/
+  background-color: #d811df; /*vonal színe*/
+transform: scaleX(0);/* vízszintesen nullára húzza (nem látszik) */
+  transform-origin: bottom left;/* a nyújtás bal alsó sarokból indul */
+  animation: vonalhuzas 1s ease-out forwards; /* 1 mp-es animáció, a végén megáll */
+  animation-delay: 0.5s;/* fél másodperc várakozás indítás előtt */
+}
+
+@keyframes vonalhuzas {
+  to { transform: scaleX(1); }/* végállapot: teljes szélesség */
+}
+
+/* hover aláhúzás */
+.bevez_cim::after,
+.osztaly_cim::after,
+.kilencedikOsz_cim::after,
+.tizedikOsz_cim::after,
+.tizenegyedikOsz_cim::after,
+.tizenkettedikOsz_cim::after,
+.tizenharmadikOsz_cim::after,
+.galeria_cim::after,
+.cim_ref::after {
+  content: "";/* üres tartalom az ál-elemnek */
+  position: absolute;/* szabad pozícionálás a szöveghez képest */
+  left: 50%;/* vízszintes kezdőpont középen */
+  bottom: -5px;/* 5 pixel távolság a szöveg alatt */
+  color: #c51fe6;/* lila szín beállítása */
+  transform: translateX(-50%);/* pontos középre igazítás */
+  width: 0;/* alapból nincs szélessége (rejtett) */
+  height: 2px;/* vonal vastagsága */
+  background: currentColor;/* a fent megadott lila színt használja */
+  transition: width 0.3s ease;/* sima szélesség-változás 0.3 mp alatt */
+}
+
+.header_cim:hover::after,
+.bevez_cim:hover::after,
+.osztaly_cim:hover::after,
+.galeria_cim:hover::after,
+.kilencedikOsz_cim:hover::after,
+.tizedikOsz_cim:hover::after,
+.tizenegyedikOsz_cim:hover::after,
+.tizenkettedikOsz_cim:hover::after,
+.tizenharmadikOsz_cim:hover::after,
+.cim_ref:hover::after {
+  width: 100%;/*egérrel rámutatva teljes szélességű lesz*/
+}

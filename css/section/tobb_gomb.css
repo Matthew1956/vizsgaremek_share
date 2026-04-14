@@ -1,0 +1,17 @@
+.tobbgomb {
+  display: inline-block;/* soron belüli blokk, méretezhető marad */
+  text-decoration: none;/* szövegaláhúzás eltávolítása */
+  color: white;/* fehér betűszín */
+  border: 1px solid black;/* vékony fekete keret */
+  border-radius: 10px;/* lekerekített sarkok */
+  padding: 10px 26px;/* belső távolság a szöveg körül */
+  background-color: #050261;/* sötétkék háttérszín */
+  cursor: pointer;/* kattintható jelzés az egérnél */
+  transition: 0.3s;/* sima átmenet a színváltáshoz */
+  margin-top: 20px;/* felső külső távolság */
+}
+
+.tobbgomb:hover {
+  background: #0a07ad;/* világosabb kék háttér rámutatáskor */
+  border-color: #00d4ff;/* keret színének változása*/
+}

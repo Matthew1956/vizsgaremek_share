@@ -1,0 +1,279 @@
+.text-box {
+  margin-top: 50px;/* felső külső távolság */
+  width: 90%;/* szélesség a szülő elem 90 százaléka */
+  color: #fff;/* fehér szövegszín */
+  position: absolute;/* abszolút pozicionálás */
+  top: 50%;/* fentről középre tolva */
+  left: 50%;/* balról középre tolva */
+  transform: translate(-50%, -50%);/* pontos középre igazítás */
+  text-align: center;/* szöveg középre rendezése */
+}
+
+.text-box h1 {
+  font-size: 64px;/* főcím betűmérete */
+  text-shadow: 1px 1px 0 #333, 2px 2px 0 #333, 3px 3px 0 #333;/* háromrétegű árnyék */
+  margin-bottom: 20px;/* alsó távolság a címtől */
+}
+
+.text-box p {
+  margin-bottom: 10px;/* bekezdés alatti távolság */
+  font-size: 20px;/* bekezdés betűmérete */
+}
+
+.tobbgomb {
+  display: inline-block;/* méretezhető soros elem */
+  text-decoration: none;/* aláhúzás törlése */
+  color: white;/* fehér betűszín */
+  border: 1px solid black;/* vékony fekete keret */
+  border-radius: 10px;/* lekerekített sarkok */
+  padding: 10px 26px;/* belső távolság */
+  background-color: #050261;/* sötétkék háttér */
+  cursor: pointer;/* kattintható kurzor */
+  transition: 0.3s;/* sima átmenet effekt */
+  margin-top: 20px;/* felső távolság a gombtól */
+}
+
+.tobbgomb:hover {
+  background: #0a07ad;/* világosabb kék hovernél */
+  border-color: #0a07ad;/* keret színe hovernél */
+}
+
+/* Bevezetés */
+.bevezetesmodul {
+  text-align: center;/* tartalom középre */
+  min-height: 30vh;/* minimum magasság a képernyő 30 százaléka */
+  width: 100%;/* teljes szélesség */
+}
+
+.bevezetes-szoveg {
+  background: rgba(0,5,50,0.7);/* sötétkék áttetsző háttér */
+  border-radius: 15px;/* lekerekített sarkok */
+  padding: 30px 40px;/* belső távolság */
+  max-width: 900px;/* max szélesség korlát */
+  margin: 0 auto;/* vízszintes középre igazítás */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);/* nagy sötét árnyék */
+  display: flex;/* rugalmas elrendezés */
+  flex-direction: column;/* elemek egymás alá */
+  gap: 15px;/* távolság az elemek közt */
+}
+
+.bevezetes-szoveg p {
+  font-size: 20px;/* szöveg mérete */
+  line-height: 1.5;/* sorköz */
+  color: #fff;/* fehér szín */
+}
+
+/* Osztály modulok */
+.osztalymodul {
+  text-align: center;/* középre zárt szöveg */
+  min-height: 100vh;/* teljes képernyőnyi magasság */
+  width: 100%;/* teljes szélesség */
+}
+
+.media_section {
+  text-align: center;/* középre igazítás */
+  min-height: 100vh;/* képernyőnyi magasság */
+  width: 100%;/* teljes szélesség */
+}
+
+.galeria{
+  background: rgba(0,5,50,0.7);/* áttetsző háttér */
+  border-radius: 15px;/* lekerekített sarkok */
+  padding: 30px 40px;/* belső margó */
+  max-width: 900px;/* szélesség korlát */
+  margin: 0 auto;/* középre igazítás */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);/* árnyék effekt */
+  display: flex;/* rugalmas elrendezés */
+  flex-direction: column;/* függőleges irány */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));/* rácsos elrendezés oszlopai */
+  gap: 25px;/* rácsközök */ 
+}
+
+.galeria p {
+  font-size: 20px;/* szöveg méret */
+  line-height: 1.5;/* sorköz */
+  color: #fff;/* fehér szín */
+}
+
+.refmodul{
+  text-align: center;/* középre igazítás */
+  min-height: 100vh;/* teljes magasság */
+  width: 100%;/* teljes szélesség */
+}
+
+.ref{
+  background: rgba(0,5,50,0.7);/* áttetsző háttér */
+  border-radius: 15px;/* sarkok lekerekítése */
+  padding: 30px 40px;/* belső távolság */
+  max-width: 900px;/* max szélesség */
+  margin: 0 auto;/* középre igazítás */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);/* árnyék */
+  display: flex;/* rugalmas keret */
+  flex-direction: column;/* oszlop irány */
+  gap: 15px;/* elemköz */
+}
+
+.ref p{
+  font-size: 20px;/* szöveg méret */
+  line-height: 1.5;/* sorköz */
+  color: #fff;/* fehér szín */
+}
+
+.osztalyok,
+.kilenc,
+.tiz,
+.tizenegy,
+.tizenkettő,
+.tizenhárom
+{
+  background: rgba(0,5,50,0.7);/* áttetsző sötét háttér */
+  border-radius: 15px;/* lekerekítés */
+  padding: 30px 40px;/* belső margó */
+  max-width: 900px;/* szélesség korlát */
+  margin: 0 auto;/* középre igazítás */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);/* árnyék */
+  display: flex;/* flex elrendezés */
+  flex-direction: column;/* egymás alá */
+  gap: 15px;/* távolság */
+}
+
+.osztalyok p,
+.kilenc p,
+.tiz p, 
+.tizenegy p,
+.tizenkettő p,
+.tizenhárom p {
+  font-size: 20px;/* szöveg méret */
+  line-height: 1.5;/* sorköz */
+  color: #fff;/* fehér szín */
+}
+
+/* Címek */
+.cim, .cim2, .cim3, .cim9, .cim10, .cim11, .cim12, .cim13, .cim4, .cim_ref{
+  font-size: 48px;/* nagy címméret */
+  color: #fff;/* fehér szín */
+  text-shadow: 2px 2px 0 #000;/* fekete árnyék a betűknek */
+  margin-top: 20px;/* felső távolság */
+  margin-bottom: 30px;/* alsó távolság */
+  position: relative;/* pozicionálási alap az aláhúzásnak */
+  display: inline-block;/* szélesség a tartalomhoz igazodik */
+}
+
+.cim::after{
+  content: "";/* üres elem az aláhúzáshoz */
+  position:absolute;/* abszolút pozíció */
+  left: 0;/* bal szélre */
+  bottom: -5px;/* cím alá 5 pixellel */
+  width: 100%;/* teljes szélesség */
+  height: 3px;/* vonal vastagság */
+  background-color: #fff;/* fehér vonal */
+  transform: scaleX(0);/* alapból láthatatlan szélesség */
+  transform-origin: bottom left;/* balról induló növekedés */
+  animation: vonalhuzas 1s ease-out forwards;/* 1 másodperces animáció */
+  animation-delay: 0.5s;/* késleltetett indítás */
+}
+
+@keyframes vonalhuzas {
+  to {
+  transform: scaleX(1);/* végállapot: teljes szélesség */
+  }
+}
+
+.cim2::after,
+.cim3::after,
+.cim9::after,
+.cim10::after,
+.cim11::after,
+.cim12::after,
+.cim13::after,
+.cim4::after,
+.cim_ref::after
+{
+  content: "";/* üres tartalom */
+  position: absolute;/* abszolút pozíció */
+  left: 50%;/* középtől indul */
+  bottom: -5px;/* szöveg alatt */
+  transform: translateX(-50%);/* pontos középre igazítás */
+  width: 0;/* alapból 0 szélesség */
+  height: 2px;/* vonalvastagság */
+  background: currentColor;/* aktuális szövegszín */
+  transition: width 0.3s ease;/* sima szélesség növekedés */
+}
+
+.cim:hover::after,
+.cim2:hover::after,
+.cim3:hover::after,
+.cim4:hover::after,
+.cim9:hover::after,
+.cim10:hover::after,
+.cim11:hover::after,
+.cim12:hover::after,
+.cim13:hover::after,
+.cim_ref:hover::after
+{
+  width: 100%;/* hover esetén teljes szélesség */
+}
+
+@keyframes underlineLoad {
+  from { width: 0; }/* induló szélesség */
+  to { width: 100%; }/* végpont szélesség */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-box h1 { font-size: 38px; }/* tablet méretű főcím */
+  .text-box p { font-size: 16px; }/* tablet méretű szöveg */
+  .tobbgomb { padding: 10px 20px; font-size: 16px; }/* kisebb gomb */
+  .bevezetes-szoveg,
+  .osztalyok,
+  .kilenc,
+  .tiz,
+  .tizenegy,
+  .tizenkettő,
+  .tizenhárom { padding: 20px; margin: 10px; }/* kisebb belső távolság */
+  .bevezetes-szoveg p,
+  .osztalyok p,
+  .kilenc p,
+  .tiz p,
+  .tizenegy p{ font-size: 16px; }/* kisebb bekezdés méret */
+  .cim, .cim2, .cim3, .cim4,.cim9, .cim10, .cim11, .cim12, .cim13, .cim_ref{ font-size: 32px; }/* kisebb címek */
+}
+
+@media (max-width: 480px) {
+  .text-box h1 { font-size: 30px; }/* mobil főcím méret */
+  nav img { width: 75px; }/* kisebb logó mobilra */
+}
+
+.site-footer {
+  background-color: #111;/* fekete háttér */
+  color: #888;/* szürke szöveg */
+  padding: 20px 0;/* belső távolság */
+  font-family: sans-serif;/* talpatlan betűtípus */
+  font-size: 13px;/* apró betűméret */
+  border-top: 1px solid #222;/* felső választóvonal */
+  margin-top: 50px;/* felső távolság */
+}
+
+.footer-content {
+  max-width: 1200px;/* max szélesség */
+  margin: 0 auto;/* középre igazítás */
+  display: flex;/* flex elrendezés */
+  justify-content: center;/* tartalom középre */
+  align-items: center;/* függőleges középre */
+  padding: 0 20px;/* szélső belső margó */
+}
+
+.footer-text p {
+  margin: 0;/* margók törlése */
+  line-height: 1.5;/* sorköz */
+}
+
+/* Mobilos nézet */
+@media (max-width: 768px) {
+.footer-content 
+  {
+  flex-direction: column;/* egymás alá rendezés */
+  text-align: center;/* középre zárt szöveg */
+  gap: 20px;/* elemek közti távolság */
+  }
+}
