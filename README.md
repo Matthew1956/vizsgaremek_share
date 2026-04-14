@@ -23,7 +23,7 @@ Telepítés és futtatás
 Mivel a projekt nem igényel szerveroldali környezetet, a futtatáshoz kövesse az alábbi lépéseket:
 
     Klónozza a repository-t:
-    git clone https://github.com/Matthew1956/vizsgaremek
+    git clone https://github.com/Matthew1956/vizsgaremek_share
 
     Navigáljon a projekt mappájába:
     cd projekt-neve
