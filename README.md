@@ -14,7 +14,7 @@ Felhasznált technológiák
 
     HTML5: A weboldal szerkezeti felépítéséhez.
 
-    CSS3: Megjelenés, elrendezés (Flexbox/Grid) és animációk.
+    CSS: Megjelenés, elrendezés (Flexbox/Grid) és animációk.
 
     JavaScript (ES6+): Dinamikus működés és eseménykezelés.
 
@@ -29,7 +29,7 @@ Mivel a projekt nem igényel szerveroldali környezetet, a futtatáshoz kövesse
     cd projekt-neve
 
     Indítás:
-    Nyissa meg az index.html fájlt bármilyen modern böngészőben (Chrome, Firefox, Edge).
+    Nyissa meg az vizsgaremek.html fájlt bármilyen modern böngészőben (Chrome, Firefox, Edge).
 
 Szerző
 
