@@ -1,14 +1,25 @@
 /* A galéria fő konténere */
 .galeria {
-  background: rgba(0,5,50,0.7);                                /* sötétkék, félig áttetsző háttér */
-  border-radius: 15px;                                         /* lekerekített sarkok */
-  padding: 20px 40px;                                          /* belső margó: 20px fent/lent, 40px oldalt */
-  max-width: 900px;                                            /* maximális szélesség */
-  margin: 0 auto;                                              /* vízszintes középre igazítás */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.7);                    /* erős árnyék alul */
-  display: grid;                                               /* grid elrendezés */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* automatikus oszlopok, min 250px széles */
-  gap: 25px;                                                   /* távolság az elemek között */
+  background: linear-gradient(135deg, #0a0f2e 0%, #0d1b4b 50%, #0a0f2e 100%); /*sötét, kékes átmenet*/
+  border-radius: 15px; /*lekerekítés*/
+  padding: 20px 40px; /*térköz, fent-lent = 20, bal-jobb = 40*/
+  max-width: 900px; /*max szél*/
+  margin: 0 auto; /*vizszint*/
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /*doboz körül az árnyék*/
+  display: grid; /*grid layoutnak a bekapcsja*/
+  grid-template-columns: repeat(4, 1fr); /*4 egyforma oszlop*/
+  gap: 16px; /*rács elemei közti táv*/
+}
+
+.galeria img,
+.galeria video {
+  width: 100%; /*szélesség */
+  height: 250px; /*magasság*/
+  object-fit: cover; /*kitölti a keretet, de vág ha kell*/
+  border-radius: 12px; /*lekerekítés*/
+  border: 1px solid rgba(99, 120, 255, 0.15); /*keret*/
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; /*animáció*/
+  cursor: pointer; /*egérmutató váltása*/
 }
 
 /* Szöveges leírás a galérián belül */
@@ -20,23 +31,11 @@
   text-align: center;                 /* szöveg középre igazítva */               
 }
 
-/* --- Képek és Videók egyedi stílusa --- */
-.galeria img, .galeria video {
-  width: 100%;                                                 /* teljes szélesség kitöltése */
-  height: 250px;                                               /* fix magasság egységes megjelenéshez */
-  object-fit: cover;                                           /* kép kitölti a cellát, arányosan vágva */
-  border-radius: 10px;                                         /* lekerekített sarkok */
-  border: 2px solid rgba(255, 255, 255, 0.1);                  /* vékony, áttetsző fehér keret */
-  transition: all 0.4s ease-in-out;                            /* sima átmenet hover effekthez */
-  cursor: pointer;                                             /* kattintható kurzor jelzése */
-}
-
-
 /* --- Hover effekt (amikor ráviszed az egeret) --- */
 .galeria img:hover, .galeria video:hover {
-    transform: scale(1.03); /* Enyhe nagyítás */
-    border-color: #00d4ff; /* Tech-kék keret hovernél */
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); /*kék izzás*/
+    transform: translateY(-5px) scale(1.03); /* Enyhe nagyítás */
+    border-color: rgba(99, 120, 255, 0.45); /* glow szín keret hovernél */
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), 0 0 0 1px rgba(99, 120, 255, 0.4); /*boxnak az árnyéka*/
 }
 
 /* --- Modal (A felugró ablak háttere) --- */
