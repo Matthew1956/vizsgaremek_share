@@ -1,0 +1,39 @@
+.badge-lista {
+  display: flex;          /* Egymás mellé rakja a jelvényeket */
+  flex-wrap: wrap;        /* Ha nem férnek el egy sorban, új sorba törnek */
+  gap: 8px;               /* Távolság a jelvények között */
+  margin-top: 10px;       /* Külső hely felülről */
+}
+
+.badge {
+  display: inline-flex;   /* Rugalmas doboz, hogy a tartalom szépen középre kerüljön */
+  align-items: center;    /* Függőlegesen középre igazítja a szöveget/ikont */
+  font-size: 16px;        /* Szövegméret */
+  font-weight: 500;       /* Közepesen vastag betűk */
+  border-radius: 999px;   /* Teljesen lekerekített szélek (pirula forma) */
+  padding: 6px 12px;      /* Belső hely a szöveg körül */
+  line-height: 1;         /* Sor magassága (ne legyen felesleges hely alatta/felette) */
+  white-space: nowrap;    /* Ne törje több sorba a szöveget a jelvényen belül */
+  background: #0a07ad;    /* Sötétkék háttérszín */
+  border: 1px solid #00d4ff; /* Világoskék keret */
+  color: #fff;            /* Fehér szövegszín */
+  transition: all 0.2s ease; /* Finom átmenet az animációkhoz */
+  cursor: default;        /* Sima egérkurzor (ne mutassa kattinthatónak) */
+}
+
+.badge:hover {
+  transform: translateY(-2px); /* Kicsit megemelkedik, ha rátolod az egeret */
+  border-color: #00d4ff;       /* Marad a világoskék keret */
+  box-shadow: 0 0 8px #00d4ff66; /* Kap egy enyhe kékes ragyogást */
+}
+
+.badge-purple {
+  background: #2a1a6e;    /* Sötétlila háttér */
+  border-color: #AFA9EC;  /* Világoslila keret */
+}
+
+.badge-purple:hover {
+  border-color: #AFA9EC;  /* Marad a lila keret hovernél is */
+  color: #AFA9EC;         /* A szöveg is lilára vált, ha ráviszed az egeret */
+  box-shadow: 0 0 8px #AFA9EC66; /* Lila ragyogás */
+}

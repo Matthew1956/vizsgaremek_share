@@ -176,3 +176,55 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+//badges
+//Definiáljuk a listát
+const lista = [
+  "Arduino IDE", "Cisco Packet Tracer", "ESP-IDF", "FANUC", "FESTO",
+  "FUSION", "Github", "KICAD", "MySQL", "PuTTY",
+  "Python (IDLE)", "SCADA", "VirtualBox", "Visual Studio", "Visual Studio Code"
+];
+
+//Definiáljuk a linkeket
+const links = {
+  "Arduino IDE": "https://www.arduino.cc/en/software",
+  "Cisco Packet Tracer": "https://www.netacad.com/courses/packet-tracer",
+  "ESP-IDF": "https://www.espressif.com/en/products/sdks/esp-idf",
+  "FANUC": "https://www.fanuc.com/",
+  "FESTO": "https://www.festo.com/",
+  "FUSION": "https://www.autodesk.com/products/fusion-360/overview",
+  "Github": "https://github.com/",
+  "KICAD": "https://www.kicad.org/",
+  "MySQL": "https://www.mysql.com/",
+  "PuTTY": "https://www.putty.org/index.html",
+  "Python (IDLE)": "https://www.python.org/",
+  "SCADA": "https://www.scada.hu/", 
+  "VirtualBox": "https://www.virtualbox.org/",
+  "Visual Studio": "https://visualstudio.microsoft.com/",
+  "Visual Studio Code": "https://code.visualstudio.com/"
+};
+
+const container = document.getElementById("badges");
+
+// Ellenőrizzük, hogy létezik-e a konténer, mielőtt elindul a ciklus
+if (container) {
+  for (let i = 0; i < lista.length; i++) {
+    const item = lista[i];
+    const badge = document.createElement("div");
+    
+    badge.className = "badge";
+    badge.textContent = item;
+
+    const url = links[item];
+    
+    if (url) {
+      badge.style.cursor = "pointer";
+      badge.onclick = function() {
+        window.open(url, "_blank");
+      };
+    }
+
+    container.appendChild(badge);
+  }
+} else {
+  console.error("Nem található a 'badges' azonosítójú elem a HTML-ben!");
+}
