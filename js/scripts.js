@@ -170,6 +170,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (modal && modal.style.display === "block") {
             if (e.key === "ArrowLeft") showMedia(currentIndex - 1);
             if (e.key === "ArrowRight") showMedia(currentIndex + 1);
+            if (e.key === "a") showMedia(currentIndex - 1);
+            if (e.key === "d") showMedia(currentIndex + 1);
             if (e.key === "Escape") closeModal();
         }
     };
