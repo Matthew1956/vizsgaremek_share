@@ -55,3 +55,10 @@
     transform: none !important; /*ne történjen vele semmi*/
   }
 }
+
+@media (max-width: 768px)
+{
+  #badges{
+    padding: 15px 20px;
+    font-size: 15px;
+}
